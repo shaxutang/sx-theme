@@ -46,99 +46,99 @@ const button = stylex.create({
   primarySolid: {
     color: colors.light,
     backgroundColor: {
-      default: colors['theme-primary-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-primary-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-primary-6']
+      default: colors['primary-5'],
+      [NOT_DISABLED_HOVER]: colors['primary-4'],
+      [NOT_DISABLED_ACTIVE]: colors['primary-6']
     }
   },
   successSolid: {
     color: colors.light,
     backgroundColor: {
-      default: colors['theme-success-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-success-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-success-6']
+      default: colors['success-5'],
+      [NOT_DISABLED_HOVER]: colors['success-4'],
+      [NOT_DISABLED_ACTIVE]: colors['success-6']
     }
   },
   infoSolid: {
     color: colors.light,
     backgroundColor: {
-      default: colors['theme-info-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-info-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-info-6']
+      default: colors['info-5'],
+      [NOT_DISABLED_HOVER]: colors['info-4'],
+      [NOT_DISABLED_ACTIVE]: colors['info-6']
     }
   },
   dangerSolid: {
     color: colors.light,
     backgroundColor: {
-      default: colors['theme-danger-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-danger-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-danger-6']
+      default: colors['danger-5'],
+      [NOT_DISABLED_HOVER]: colors['danger-4'],
+      [NOT_DISABLED_ACTIVE]: colors['danger-6']
     }
   },
   primaryBordered: {
     borderWidth: 1,
     borderStyle: 'solid',
     color: {
-      default: colors['theme-primary-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-primary-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-primary-6']
+      default: colors['primary-5'],
+      [NOT_DISABLED_HOVER]: colors['primary-4'],
+      [NOT_DISABLED_ACTIVE]: colors['primary-6']
     },
     borderColor: {
-      default: colors['theme-primary-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-primary-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-primary-6']
+      default: colors['primary-5'],
+      [NOT_DISABLED_HOVER]: colors['primary-4'],
+      [NOT_DISABLED_ACTIVE]: colors['primary-6']
     }
   },
   successBordered: {
     borderWidth: 1,
     borderStyle: 'solid',
     color: {
-      default: colors['theme-success-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-success-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-success-6']
+      default: colors['success-5'],
+      [NOT_DISABLED_HOVER]: colors['success-4'],
+      [NOT_DISABLED_ACTIVE]: colors['success-6']
     },
     borderColor: {
-      default: colors['theme-success-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-success-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-success-6']
+      default: colors['success-5'],
+      [NOT_DISABLED_HOVER]: colors['success-4'],
+      [NOT_DISABLED_ACTIVE]: colors['success-6']
     }
   },
   infoBordered: {
     borderWidth: 1,
     borderStyle: 'solid',
     color: {
-      default: colors['theme-info-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-info-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-info-6']
+      default: colors['info-5'],
+      [NOT_DISABLED_HOVER]: colors['info-4'],
+      [NOT_DISABLED_ACTIVE]: colors['info-6']
     },
     borderColor: {
-      default: colors['theme-info-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-info-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-info-6']
+      default: colors['info-5'],
+      [NOT_DISABLED_HOVER]: colors['info-4'],
+      [NOT_DISABLED_ACTIVE]: colors['info-6']
     }
   },
   dangerBordered: {
     borderWidth: 1,
     borderStyle: 'solid',
     color: {
-      default: colors['theme-danger-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-danger-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-danger-6']
+      default: colors['danger-5'],
+      [NOT_DISABLED_HOVER]: colors['danger-4'],
+      [NOT_DISABLED_ACTIVE]: colors['danger-6']
     },
     borderColor: {
-      default: colors['theme-danger-5'],
-      [NOT_DISABLED_HOVER]: colors['theme-danger-4'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-danger-6']
+      default: colors['danger-5'],
+      [NOT_DISABLED_HOVER]: colors['danger-4'],
+      [NOT_DISABLED_ACTIVE]: colors['danger-6']
     }
   },
   textPrimary: {
     color: {
-      default: colors['theme-primary-5'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-primary-6']
+      default: colors['primary-5'],
+      [NOT_DISABLED_ACTIVE]: colors['primary-6']
     },
     backgroundColor: {
-      [NOT_DISABLED_HOVER]: colors['theme-primary-1'],
-      [NOT_DISABLED_ACTIVE]: colors['theme-primary-2']
+      [NOT_DISABLED_HOVER]: colors['primary-1'],
+      [NOT_DISABLED_ACTIVE]: colors['primary-2']
     }
   }
 })
