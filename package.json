@@ -1,0 +1,62 @@
+{
+  "name": "sx-theme",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "exports": {
+    "./input": {
+      "import": "./dist/es/input/index.js",
+      "require": "./dist/cjs/input/index.js",
+      "types": "./dist/types/input/index.d.ts"
+    },
+    "./button": {
+      "import": "./dist/es/button/index.js",
+      "require": "./dist/cjs/button/index.js",
+      "types": "./dist/types/button/index.d.ts"
+    },
+    ".": {
+      "import": "./dist/es/index.js",
+      "require": "./dist/cjs/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./index.css": {
+      "import": "./dist/styles/index.css",
+      "require": "./dist/styles/index.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "rollup --config rollup.config.ts --configPlugin typescript --watch",
+    "build": "rm -rf dist && rollup --config rollup.config.ts --configPlugin typescript",
+    "format": "prettier --write ."
+  },
+  "keywords": [],
+  "author": "shaxutang <olaysunju@163.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "class-variance-authority": ">=0.7.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@stylexjs/babel-plugin": "^0.4.1",
+    "@stylexjs/rollup-plugin": "^0.4.1",
+    "@stylexjs/stylex": "^0.4.1",
+    "@types/node": "^20.11.5",
+    "cross-env": "^7.0.3",
+    "fast-glob": "^3.3.2",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "rollup": "^4.9.5",
+    "rollup-plugin-dts": "^6.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "class-variance-authority": "^0.7.0"
+  }
+}

@@ -1,0 +1,18 @@
+---
+path: src/<%= name %>/index.ts
+---
+import { cva, type VariantProps } from 'class-variance-authority'
+import * as stylex from '@stylexjs/stylex'
+import { className } from '../common'
+import { colors } from '../variables/color.stylex'
+import { padding } from '../variables/padding.stylex'
+
+const <%= name %> = stylex.create({
+  base: {}
+})
+
+export const <%= $s.changeCase.pascalCase(name) %>CVA = cva([className(<%= name %>.base)],{
+  variants: {}
+})
+
+export type <%= $s.changeCase.pascalCase(name) %>Variants = VariantProps<typeof <%= $s.changeCase.pascalCase(name) %>CVA>

@@ -1,0 +1,10 @@
+---
+type: append
+path: ./package.json
+pattern: '"exports": {'
+---
+    "./<%= name %>": {
+      "import": "./dist/esm/<%= name %>/index.js",
+      "require": "./dist/cjs/<%= name %>/index.js",
+      "types": "./dist/types/<%= name %>/index.d.ts"
+    },
