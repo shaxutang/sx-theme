@@ -25,9 +25,11 @@ const input = Object.fromEntries(
 
 const entryFileNames = ({ name }: PreRenderedChunk, dts: boolean = false) => {
   const ext = dts ? 'd.ts' : 'js'
-  return name === 'index'
-    ? `[format]/index.${ext}`
-    : `[format]/[name]/index.${ext}`
+  if (name === 'index') {
+    return dts ? `index.${ext}` : `[format]/index.${ext}`
+  } else {
+    return dts ? `[name]/index.${ext}` : `[format]/[name]/index.${ext}`
+  }
 }
 
 function bundleConfig(format: 'cjs' | 'esm'): RollupOptions {
